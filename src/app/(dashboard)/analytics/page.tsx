@@ -98,7 +98,7 @@ export default function AnalyticsPage() {
                     ))}
                   </Pie>
                   <Tooltip 
-                    formatter={(value: number) => `$${value.toFixed(2)}`}
+                    formatter={(value: any) => `$${Number(value).toFixed(2)}`}
                     contentStyle={{ backgroundColor: 'var(--card)', borderColor: 'var(--border)', borderRadius: '8px' }}
                   />
                   <Legend verticalAlign="bottom" height={36} />
